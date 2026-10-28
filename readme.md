@@ -38,6 +38,8 @@ Which will create `robot.py` and `pyproject.toml`.
 Then, run
 ```
 py -3 -m robotpy sync
+
+py -3 -m robotpy deploy
 ```
 Which will: 
 - Install Python into the RoboRIO

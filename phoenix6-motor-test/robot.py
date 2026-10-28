@@ -53,24 +53,11 @@ class MyRobot(wpilib.TimedRobot):
     def autonomousPeriodic(self):
         """This function is called periodically during autonomous."""
 
-        # Drive for two seconds
-        # if self.timer.get() < 2.0:
-        #     # Drive forwards half speed, make sure to turn input squaring off
-        #     self.robotDrive.arcadeDrive(0.5, 0, squareInputs=False)
-        # else:
-
-        #     self.robotDrive.stopMotor()  # Stop robot
-
     def teleopInit(self):
         """This function is called once each time the robot enters teleoperated mode."""
 
     def teleopPeriodic(self):
         """This function is called periodically during teleoperated mode."""
-        # self.robotDrive.arcadeDrive(
-        #     -self.controller.getLeftY(), -self.controller.getRightX()
-        # )
-
-        # print(self.controller.getLeftY())
 
         throttle = self.joy.getLeftY() * -1
         wheel = self.joy.getRightX() * 1
